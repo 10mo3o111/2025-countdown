@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="img/typescript.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=M+PLUS+Rounded+1c&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="l_header">
+      <h1 class="l_header__text">大阪万博カウントダウン！</h1>
+    </header>
+    <main class="l_main">
+      <section class="l_main__inner c_counter">
+        <h2 class="c_counter__title02">
+          <span class="c_counter__subttl">知ってました？</span
+          ><span class="c_counter__mainttl">2025年大阪万博</span>
+        </h2>
+        <form id="form">
+          <select name="language" aria-label="Language">
+            <option value="./index.html" selected>日本語</option>
+            <option value="./index-en.html">英語</option>
+            <option value="./index-zn.html">中文</option>
+          </select>
+        </form>
+        <h3 class="c_counter__title03">
+          <span class="c_startcounter__mainttl">開催まで</span>
+        </h3>
+        <p class="c_startcounter__content">
+          <span class="c_counter__text">あと</span>
+          <span id="countdownDay" class="c_counter__number"></span>
+          <span class="c_counter__text">日</span><br class="mobile_break" />
+          <span id="countdownHour" class="c_counter__number"></span>
+          <span class="c_counter__text">時間</span>
+          <span id="countdownMinut" class="c_counter__number"></span>
+          <span class="c_counter__text">分</span>
+          <span id="countdownSecond" class="c_counter__number"></span>
+          <span class="c_counter__text">秒</span>
+        </p>
+        <h3 class="c_counter__title03">
+          <span class="c_endcounter__mainttl">終了まで</span>
+        </h3>
+        <p class="c_endcounter__content">
+          <span class="c_counter__text">あと</span>
+          <span class="c_counter__number" id="countdownEndDay"></span>
+          <span class="c_counter__text">日</span><br class="mobile_break" />
+          <span class="c_counter__number" id="countdownEndHour"></span>
+          <span class="c_counter__text">時間</span>
+          <span class="c_counter__number" id="countdownEndMinut"></span>
+          <span class="c_counter__text">分</span>
+          <span class="c_counter__number" id="countdownEndSecond"></span>
+          <span class="c_counter__text">秒</span>
+        </p>
+      </section>
+      <section class="l_main__inner"></section>
+    </main>
+    <button id="resetBtn" class="c_privacy__resetBtn c_privacy__reset">
+      クッキー設定をリセット
+    </button>
+    <div id="privacyPanel" class="c_privacy__panel">
+      <p class="c_privacy__text">
+        当サイトではユーザーエクスペリエンス向上のためクッキーを使用しています。また、匿名でアクセス状況のデータを収集しています。詳しい情報は当サイトのプライバシーポリシーをご覧ください。
+      </p>
+      <button id="agreeBtn" class="c_privacy__button">承認する</button>
+    </div>
+    <footer class="l_footer">
+      <h2 class="c_footer__title">JavaScript Portfolio Site</h2>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
