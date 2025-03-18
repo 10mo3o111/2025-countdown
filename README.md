@@ -1,4 +1,4 @@
-# Vite Countdown Portfolio Site
+# Countdown Portfolio Site
 
 このポートフォリオサイトは、**TypeScript**と**Vite**を使って作成したカウントダウンタイマーを表示するシンプルなウェブサイトです。大阪万博までのカウントダウンを表示し、ユーザーが言語を選択できる機能も実装されています。
 
@@ -7,11 +7,11 @@
 - **目的**: 2025年大阪万博までのカウントダウンを表示するポートフォリオサイト
 - **技術スタック**:
   - TypeScript
-  - Vite (ビルドツール)
-  - JavaScript (カウントダウンロジック)
+  - Vite 
+  - JavaScript 
   - HTML/CSS
-  - Normalize.css (デフォルトのスタイルをリセット)
-  - js-cookie (クッキー管理)
+  - Normalize.css 
+  - js-cookie
 
 ## 特徴
 
