@@ -4,7 +4,6 @@ import stylelint from "vite-plugin-stylelint"; // stylelintプラグインのイ
 export default defineConfig({
   base: "/2025-countdown/", // サブディレクトリに配置する場合
   build: {
-    assetsDir: "assets",
     rollupOptions: {
       input: {
         main: "index.html",
