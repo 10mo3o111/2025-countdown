@@ -100,6 +100,13 @@ address {
   background-position: 16px 10px;
   background-repeat: no-repeat;
   min-height: 60px;
+
+  @media screen and (width >= 768px) {
+    padding-left: 120px;
+    background-size: 80px;
+    background-position: 30px 20px;
+    min-height: 100px;
+  }
 }
 
 .l_header__text {
@@ -109,6 +116,11 @@ address {
   font-family: var(--font-custom);
   font-size: 16px;
   font-weight: bold;
+
+  @media screen and (width >= 768px) {
+    padding: 30px 0 5px;
+    font-size: 24px;
+  }
 }
 
 /* === メインコンテンツエリアのスタイル設定 === */
@@ -121,6 +133,15 @@ address {
 /* === メインコンテンツ、counterエリアのスタイル設定 === */
 .c_counter__mainttl {
   font-size: 2.5rem;
+
+  @media screen and (width >= 768px) {
+    font-size: 3.5rem;
+  }
+
+  @media screen and (width >= 992px) {
+    font-size: 5rem;
+    letter-spacing: 0;
+  }
 }
 
 .c_counter__title02 {
@@ -156,10 +177,28 @@ address {
 .c_counter__text {
   font-size: 1rem;
   font-weight: bold;
+
+  @media screen and (width >= 768px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (width >= 992px) {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
 }
 
 .c_counter__number {
   font-size: 2.5rem;
+
+  @media screen and (width >= 768px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (width >= 992px) {
+    font-size: 4rem;
+    font-weight: bold;
+  }
 }
 
 /* === フッターエリアのスタイル設定 === */
@@ -182,6 +221,13 @@ address {
   padding: 20px 60px;
   background: rgb(0 0 0 / 75%);
   color: var(--color-font-white);
+
+  @media screen and (width >= 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 .c_privacy__resetBtn,
@@ -193,6 +239,13 @@ address {
   font-size: 0.9rem;
   border: none;
   border-radius: 8px;
+}
+
+/* --- タブレット、PCのサイズでの調整 --- */
+@media screen and (width >= 768px) {
+  .c_privacy__button {
+    flex: 0 0 200px;
+  }
 }
 
 .c_privacy__panel.c_privacy__hide {
@@ -208,66 +261,8 @@ address {
   display: none;
 }
 
-/* メディアクエリまとめ */
-
-/* --- タブレット、PCのサイズでの調整 --- */
-@media screen and (min-width: 768px) {
-  .l_header {
-    padding-left: 120px;
-    background-size: 80px;
-    background-position: 30px 20px;
-    min-height: 100px;
-  }
-
-  .l_header__text {
-    padding: 30px 0 5px;
-    font-size: 24px;
-  }
-
-  .c_counter__mainttl {
-    font-size: 3.5rem;
-  }
-
-  .c_counter__text {
-    font-size: 1.2rem;
-  }
-
-  .c_counter__number {
-    font-size: 3rem;
-  }
-
-  .c_privacy__panel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .c_privacy__button {
-    flex: 0 0 200px;
-  }
-}
-
-/* --- デスクトップサイズでの調整 --- */
-@media screen and (min-width: 992px) {
-  .c_counter__mainttl {
-    font-size: 5rem;
-    letter-spacing: 0;
-  }
-
-  .c_counter__text {
-    font-size: 1.5rem;
-    font-weight: normal;
-  }
-
-  .c_counter__number {
-    font-size: 4rem;
-    font-weight: bold;
-  }
-}
-
 /* --- スマホサイズでの調整 --- */
-@media screen and (min-width: 478px) {
+@media screen and (width >= 478px) {
   .mobile_break {
     display: none;
   }
