@@ -95,7 +95,7 @@ address {
 .l_header {
   padding-left: 76px;
   background-color: var(--color-base-blue);
-  background-image: url("./img/logo.svg");
+  background-image: url("/logo.svg");
   background-size: 53px;
   background-position: 16px 10px;
   background-repeat: no-repeat;
